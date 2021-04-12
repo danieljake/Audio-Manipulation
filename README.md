@@ -1,13 +1,15 @@
 # Audio Manipulation Program
 An audio manipulation program written in C++ using catch.hpp for testing
 
-To build:
+1) To build:
 Run **make** in root project folder
 
 For testing with catch.hpp:
 Run **make test** in root project folder
 
-Arguments and program invocation:
+2) Sample audio files have been provided in **sample_inpu.zipt**. These should be used for the program's invocation as described below:
+
+3) Arguments and program invocation:
  
 **samp -r sampleRateInHz -b bitCount -c noChannels [-o outFileName ] [<ops>] soundFile1 [soundFile2]
 Description**
@@ -44,5 +46,5 @@ Description**
   
 The sample rate, bit count and number of channels should be used for both the input files and the resulting output file.
 
-Input:
+**Input:**
 The format of the input .raw audio files is simply a stream of samples (a binary file). If you know the size of each element (8/16 bit and number of channels), and the size of the file (using seekg and tellg as done here: http://www.cplusplus.com/reference/istream/istream/tellg/) you can tell how many samples is contained in the file.
