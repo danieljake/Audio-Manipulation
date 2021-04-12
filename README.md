@@ -1,9 +1,15 @@
 # Audio Manipulation Program
 An audio manipulation program written in C++ using catch.hpp for testing
 
+To build:
+Run **make** in root project folder
+
+For testing with catch.hpp:
+Run **make test** in root project folder
+
 Arguments and program invocation:
  
-#$samp -r sampleRateInHz -b bitCount -c noChannels [-o outFileName ] [<ops>] soundFile1 [soundFile2]
+**samp -r sampleRateInHz -b bitCount -c noChannels [-o outFileName ] [<ops>] soundFile1 [soundFile2]
 Description
 
 • -r Specifies the number of samples per second of the audio file(s) (usually 44100)
