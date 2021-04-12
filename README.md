@@ -1,15 +1,16 @@
 # Audio Manipulation Program
 An audio manipulation program written in C++ using catch.hpp for testing
 
+This C++ application can process audio sounds clips. It can perform simple editing operations on sound clips – such as cut and paste – as well as transforming the sound clips. Examples of the latter include fade in/out and normalisation. The sound clips are be 1-channel (mono) or 2-channel (stereo) and are provided as simple raw byte data (**sample_input.zip**). 
+Programmatically, a raw sound file/clip is a sequence of samples (usually, 8, 16 or 24-bits) of an audio signal that can be sent to a speaker to produce sound. The sound clip also has an associated sample rate – for example, 44.1 kHz (ie. 44100 samples per second). The higher the sample rate, the better, usually, the quality of the sound produced. The number of bits per sample also has a profound effect on audio quality: generally, 8-bits per sample produces really poor sound. Of course, high sampling rates result in very large sound files, which is why compression (such as MP3) is usually used – This program cannot manipulate compressed formats. Simple raw (byte stream) audio will be used throughout.
+
 1) To build:
 Run **make** in root project folder
 
 For testing with catch.hpp:
 Run **make test** in root project folder
 
-2) Sample audio files have been provided in **sample_inpu.zipt**. These should be used for the program's invocation as described below:
-
-3) Arguments and program invocation:
+2) Arguments and program invocation:
  
 **samp -r sampleRateInHz -b bitCount -c noChannels [-o outFileName ] [<ops>] soundFile1 [soundFile2]
 Description**
