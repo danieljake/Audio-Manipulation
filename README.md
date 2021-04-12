@@ -10,7 +10,7 @@ Run **make test** in root project folder
 Arguments and program invocation:
  
 **samp -r sampleRateInHz -b bitCount -c noChannels [-o outFileName ] [<ops>] soundFile1 [soundFile2]
-Description
+Description**
 
 • -r Specifies the number of samples per second of the audio file(s) (usually 44100)
 
